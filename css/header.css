@@ -147,6 +147,7 @@
   position: absolute;
   right: 15px;
   top: 14px;
+  display: none;
 }
 #header .container .content #topHeader .top-nav .mob-btn > button {
   --swiper-theme-color: #007aff;

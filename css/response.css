@@ -168,4 +168,7 @@
   #header .container .content #topHeader .top-nav ul {
     display: none;
   }
+  #header .container .content #topHeader .top-nav .mob-btn {
+    display: inline-block;
+  }
 }
