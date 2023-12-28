@@ -1,0 +1,76 @@
+#topModal {
+  width: 100%;
+  height: 40.65px;
+  position: relative;
+  transition: all 1s;
+  z-index: 3;
+}
+#topModal.off {
+  height: 0;
+}
+#topModal.off .container {
+  top: -100px;
+}
+#topModal .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #432f31;
+  overflow: hidden;
+}
+#topModal .container.off {
+  top: -100px;
+}
+#topModal .container .gap {
+  width: 100%;
+  padding: 9px 0;
+}
+#topModal .container .gap .content {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+#topModal .container .gap .content h2 {
+  width: 100%;
+}
+#topModal .container .gap .content h2 strong {
+  font-size: 14px;
+  line-height: 19.2px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+#topModal .container .gap .content h2 a {
+  margin: 0 0 0 10px;
+  text-decoration: underline;
+  color: #c7bbb4;
+  font-size: 14px;
+  line-height: 19.2px;
+  letter-spacing: -1px;
+}
+#topModal .container .gap .content h2 button {
+  cursor: pointer;
+  position: absolute;
+  top: -4.5px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+#topModal .container .gap .content h2 button::before {
+  content: "";
+  width: 70%;
+  position: absolute;
+  background: #c7bbb4;
+  height: 2px;
+  transform: rotate(45deg);
+}
+#topModal .container .gap .content h2 button::after {
+  content: "";
+  width: 70%;
+  position: absolute;
+  background: #c7bbb4;
+  height: 2px;
+  transform: rotate(-45deg);
+}

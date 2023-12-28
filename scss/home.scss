@@ -1,0 +1,1621 @@
+#main {
+  width: 100%;
+  position: relative;
+  #section1 {
+    width: 100%;
+    .slide-container {
+      width: 100%;
+      position: relative;
+      .slide-view {
+        width: 100%;
+        overflow: hidden;
+        .slide-wrap {
+          position: relative;
+          width: 100% * 5;
+          display: flex;
+          margin: 0 0 0 -100%;
+          .slide {
+            width: 100%;
+            height: 100vh;
+            background: url() no-repeat 50% 50%;
+            background-size: cover;
+            > .container {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              > .content {
+                width: 100%;
+                padding: 0 192px;
+                > .title {
+                  max-width: 80%;
+                  margin: 70px auto 0 0;
+                  user-select: none;
+                  > h2 {
+                    font-size: 54px;
+                    font-weight: 600;
+                    color: #fff;
+                    letter-spacing: -0.5px;
+                  }
+                  > h3 {
+                    margin: 20px 0 0 0;
+                    color: #fff;
+                  }
+                  > a {
+                    display: inline-block;
+                    color: #fff;
+                    margin: 15px 0 0 0;
+                    &::after {
+                      content: "";
+                      position: relative;
+                      left: 2px;
+                      display: inline-block;
+                      width: 7px;
+                      height: 7px;
+                      border-top: 1.5px solid #fff;
+                      border-right: 1.5px solid #fff;
+                      transform: rotate(45deg) translate(-2px);
+                    }
+                  }
+                }
+              }
+            }
+            &.slide1 {
+              background-image: url(../img/230331-2000-mai-GLOBAL.webp);
+            }
+            &.slide2 {
+              background-image: url(../img/230104-1-2000-mai-L7WLK.webp);
+            }
+            &.slide3 {
+              background-image: url(../img/230324-01-2000-mai-GLOBAL.webp);
+            }
+          }
+        }
+      }
+      .slick-prev-arrow {
+        background: transparent;
+        border: 0;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transition: all 0.4s;
+        opacity: 0;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        &.on {
+          opacity: 1;
+          display: inline-block;
+        }
+        &::before {
+          cursor: pointer;
+          content: "";
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          border-top: 1px solid #fff;
+          border-left: 1px solid #fff;
+          transform: rotate(-45deg);
+        }
+      }
+      .slick-next-arrow {
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transition: all 1s;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        &.on {
+          opacity: 1;
+          display: inline-block;
+        }
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          border-top: 1px solid #fff;
+          border-right: 1px solid #fff;
+          transform: rotate(45deg);
+        }
+      }
+      .bottom-button-container {
+        position: absolute;
+        bottom: 7%;
+        right: 12%;
+        > .container {
+          > ul {
+            width: 180px;
+            height: 2px;
+            display: inline-block;
+            display: flex;
+            position: relative;
+            > li {
+              cursor: pointer;
+              width: 60px;
+              height: 2px;
+              background: #fff;
+              opacity: 0.5;
+              transition: all 0.4s;
+              &.on {
+                opacity: 1;
+              }
+              i {
+              }
+            }
+          }
+          > button {
+            position: absolute;
+            right: -25px;
+            top: -8px;
+            width: 6px;
+            height: 20px;
+            background: transparent;
+            border: 0;
+
+            &::before {
+              content: "";
+              width: 6px;
+              height: 20px;
+              display: inline-block;
+              border-left: 2px solid #c4c4c4;
+              border-right: 2px solid #c4c4c4;
+              cursor: pointer;
+            }
+            &::after {
+              content: "";
+              width: 0;
+              height: 0;
+              display: inline-block;
+              border-top: 11px solid transparent;
+              border-left: 13px solid #c4c4c4;
+              border-bottom: 11px solid transparent;
+              cursor: pointer;
+              display: none;
+            }
+            &.off {
+              &::after {
+                display: inline-block;
+              }
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .scroll-gif-container {
+        position: absolute;
+        bottom: 8%;
+        left: calc(50% - 82px);
+        button {
+          width: 164px;
+          height: 95px;
+          background: transparent;
+          border: 0;
+          span {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  #section2 {
+    width: 100%;
+    .container {
+      width: 100%;
+      max-width: 1536px;
+      margin: 0 auto;
+      > .gap {
+        padding: 132px 20px;
+        > .title {
+          width: 100%;
+          padding: 0 0 65px 0;
+          display: flex;
+          align-items: end;
+          justify-content: space-between;
+          .main-title {
+            h2 {
+              color: #998465;
+              font-size: 40px;
+              line-height: 48px;
+              letter-spacing: -1px;
+            }
+          }
+          .more-promotion {
+            a {
+              span {
+                color: rgb(102, 102, 102);
+                font-size: 16px;
+                line-height: 19.2px;
+                letter-spacing: -1px;
+                &::after {
+                  content: "";
+                  display: inline-block;
+                  width: 7px;
+                  height: 7px;
+                  border-top: 1px solid #555;
+                  border-right: 1px solid #555;
+                  transform: rotate(45deg) translateY(-4px);
+                }
+              }
+            }
+          }
+        }
+        > .content {
+          width: 100%;
+          display: flex;
+          .col {
+            width: calc(100% / 3);
+            &.col1 {
+              > .gap {
+                margin: 0 auto 0 0;
+              }
+            }
+            &.col2 {
+              > .gap {
+                margin: 0 auto;
+              }
+            }
+            &.col3 {
+              > .gap {
+                margin: 0 0 0 auto;
+              }
+            }
+            > .gap {
+              width: 400px;
+              .img-box {
+                width: 100%;
+                margin: 0 0 16px 0;
+                overflow: hidden;
+
+                &:hover {
+                  img {
+                    transform: scale(1.05);
+                  }
+                }
+                img {
+                  transition: all 0.4s;
+                  width: 400px;
+                }
+              }
+              h2 {
+                margin: 20px 0;
+                color: rgb(153, 132, 101);
+                font-size: 24px;
+                line-height: 27px;
+                font-weight: 500;
+                letter-spacing: -1px;
+              }
+              .para-box {
+                border-top: 2px solid rgb(85, 85, 85);
+                padding: 15px 0;
+                p {
+                  color: rgb(85, 85, 85);
+                  font-size: 18px;
+                  line-height: 27px;
+                  letter-spacing: -1px;
+                }
+              }
+              button {
+                font-size: 16px;
+                color: #fff;
+                width: 222px;
+                height: 52px;
+                margin: 20px 0 0 0;
+                letter-spacing: 1px;
+                background: #998465;
+                border: 0;
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover {
+                  background-color: #74634b;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #section3 {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    height: 810px;
+    .container {
+      width: 100%;
+      .content {
+        width: 100%;
+
+        position: relative;
+        > .title {
+          position: relative;
+          z-index: 4;
+          width: 100%;
+          max-width: 1576px;
+          margin: 0 auto 0 auto;
+          padding: 0 20px;
+          > .row1 {
+            padding: 132px 0 65px 0;
+            h2 {
+              color: #fff;
+              font-size: 40px;
+              letter-spacing: -1px;
+              line-height: 30px;
+            }
+          }
+          > .row2 {
+            width: 100%;
+            > .gap {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              position: relative;
+              .hotels {
+                width: cal(100% / 6);
+                margin: 0 31px 0 0;
+                position: relative;
+                > .para-box {
+                  width: 50vw;
+                  max-width: 700px;
+                  position: absolute;
+                  color: #fff;
+                  h3 {
+                    position: relative;
+                    top: 100px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: -1px;
+                    margin: 40px 0 35px 0;
+                    line-height: 27px;
+                  }
+                  p {
+                    position: relative;
+                    top: 100px;
+                    font-size: 16px;
+                    letter-spacing: normal;
+                    line-height: 30px;
+                    margin: 20px 0 42px 0;
+                    text-size-adjust: 100%;
+                  }
+                  button {
+                    position: relative;
+                    top: 100px;
+                    border: 1px solid #fff;
+                    background: transparent;
+                    width: 130px;
+                    height: 35px;
+                    font-size: 14px;
+                    line-height: 35px;
+                    color: #fff;
+                    padding: 0 5px 0 0;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    &:hover {
+                      background-color: #fff;
+                      color: #000000;
+                      span {
+                        &::after {
+                          transition: all 0.3s;
+                          border-top: 1px solid #000;
+                          border-right: 1px solid #000;
+                        }
+                      }
+                    }
+                    span {
+                      font-size: 11px;
+                      height: 35px;
+                      &::after {
+                        content: "";
+                        display: inline-block;
+                        width: 6px;
+                        height: 6px;
+                        border-top: 1px solid #fff;
+                        border-right: 1px solid #fff;
+                        transform: rotate(45deg) translateY(-4px);
+                      }
+                    }
+                  }
+                }
+                &.hotel1 {
+                  > .para-box {
+                    opacity: 0;
+                  }
+                }
+                &.hotel2 {
+                  > .para-box {
+                    opacity: 0;
+                  }
+                }
+                &.hotel3 {
+                  > .para-box {
+                    opacity: 0;
+                  }
+                }
+                &.hotel4 {
+                  > .para-box {
+                    width: 460px;
+                    opacity: 0;
+                  }
+                }
+                &.hotel5 {
+                  > .para-box {
+                    width: 460px;
+                    opacity: 0;
+                  }
+                }
+                &.hotel6 {
+                  margin: 0;
+                  > .para-box {
+                    text-align: right;
+                    position: absolute;
+                    right: 0;
+                    opacity: 0;
+                  }
+                }
+                a {
+                  display: inline-block;
+                  width: 100%;
+                  opacity: 1;
+                  i {
+                    display: inline-block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #fff;
+                    pointer-events: none;
+                  }
+                  img {
+                    width: 228px;
+                    pointer-events: none;
+                  }
+                }
+
+                &.hotel1 {
+                }
+                &.hotel2 {
+                }
+                &.hotel3 {
+                }
+                &.hotel4 {
+                }
+                &.hotel5 {
+                }
+                &.hotel6 {
+                }
+              }
+            }
+          }
+        }
+        > .slide {
+          width: 100%;
+          height: 810px;
+          background: url() no-repeat 50% 50%;
+          background-size: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba($color: #000000, $alpha: 0.4);
+          }
+          &.slide1 {
+            opacity: 0;
+            z-index: 3;
+            background-image: url(../img/mai-brand-signiel-pc.webp);
+          }
+          &.slide2 {
+            opacity: 0;
+            z-index: 2;
+            background-image: url(../img/mai-brand-hotels-pc.webp);
+          }
+          &.slide3 {
+            opacity: 0;
+            z-index: 2;
+            background-image: url(../img/mai-brand-l7-pc.webp);
+          }
+          &.slide4 {
+            opacity: 0;
+            z-index: 2;
+            background-image: url(../img/mai-brand-city-pc.webp);
+          }
+          &.slide5 {
+            opacity: 0;
+            z-index: 2;
+            background-image: url(../img/221219-01-2000-ove-global.webp);
+          }
+          &.slide6 {
+            z-index: 2;
+            background-image: url(../img/mai-brand-VL-pc.webp);
+          }
+        }
+        .response-title {
+          display: none;
+          position: relative;
+          z-index: 2;
+          padding: 0 28px 20px 28px;
+
+          > .row1 {
+            h2 {
+              font-size: 23px;
+              letter-spacing: -1px;
+              line-height: 30px;
+              padding: 70px 0 60px 0;
+              color: #fff;
+            }
+          }
+          > .row2 {
+            width: 100%;
+            > .gap {
+              width: 100%;
+              .hotels {
+                width: 100%;
+                margin: 0 0 16px 0;
+                border: 1px solid rgba($color: #fff, $alpha: 0.4);
+                border-radius: 7px;
+                a {
+                  display: inline-block;
+                  padding: 7.5px 18px 7.5px 18px;
+                  width: 100%;
+                  position: relative;
+                  img {
+                    width: 153px;
+                    height: 40px;
+                  }
+                  &::before {
+                    content: "";
+                    display: inline-block;
+                    background-color: rgba($color: #fff, $alpha: 1);
+                    width: 12px;
+                    height: 1.5px;
+                    position: absolute;
+                    top: 50%;
+                    right: 19px;
+                  }
+                  &::after {
+                    content: "";
+                    display: inline-block;
+                    background-color: rgba($color: #fff, $alpha: 1);
+                    width: 1.5px;
+                    height: 12px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-5px);
+                    right: 24px;
+                  }
+                }
+                .para-box {
+                  display: none;
+                  padding: 0 18px 18px 18px;
+                  h3 {
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    letter-spacing: -1px;
+                    margin: 32px 0 20px 0;
+                    font: "Open Sans";
+                    color: #fff;
+                  }
+                  p {
+                    font-size: 15px;
+                    line-height: 24px;
+                    margin: 20px 0 42px 0;
+                    word-break: keep-all;
+                    font: "Noto Sans KR";
+                    color: #fff;
+                  }
+                  button {
+                    position: relative;
+                    border: 1px solid #fff;
+                    background: transparent;
+                    width: 130px;
+                    height: 35px;
+                    font-size: 14px;
+                    line-height: 35px;
+                    color: #fff;
+                    padding: 0 5px 0 0;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    &:hover {
+                      background-color: #fff;
+                      color: #000000;
+                      span {
+                        &::after {
+                          transition: all 0.3s;
+                          border-top: 1px solid #000;
+                          border-right: 1px solid #000;
+                        }
+                      }
+                    }
+                    span {
+                      font-size: 11px;
+                      height: 35px;
+                      &::after {
+                        content: "";
+                        display: inline-block;
+                        width: 6px;
+                        height: 6px;
+                        border-top: 1px solid #fff;
+                        border-right: 1px solid #fff;
+                        transform: rotate(45deg) translateY(-4px);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .response-slide {
+          display: none;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 4;
+            content: "";
+            display: block;
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 100%;
+            height: 100%;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+          }
+
+          &.slide1 {
+            opacity: 0;
+          }
+          &.slide2 {
+            opacity: 0;
+          }
+          &.slide3 {
+            opacity: 0;
+          }
+          &.slide4 {
+            opacity: 0;
+          }
+          &.slide5 {
+            opacity: 0;
+          }
+          &.slide6 {
+
+          }
+        }
+      }
+    }
+  }
+  #section4 {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    > .container {
+      width: 100%;
+      padding: 130px 0 40px 0;
+      background-color: #eee;
+      > .gap {
+        width: 100%;
+        > .content {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          .prev-btn {
+            background-color: transparent;
+            cursor: pointer;
+            position: absolute;
+            left: 140px;
+            top: 37%;
+            transform: translateY(-50%);
+            display: inline-block;
+            width: 63px;
+            height: 104px;
+            cursor: pointer;
+            border: 0;
+            &::after {
+              content: "";
+              display: inline-block;
+              border-top: 1px solid #998465;
+              border-left: 1px solid #998465;
+              width: 40px;
+              height: 40px;
+              transform: rotate(-45deg);
+            }
+          }
+          .next-btn {
+            background-color: transparent;
+            cursor: pointer;
+            position: absolute;
+            right: 140px;
+            top: 37%;
+            transform: translateY(-50%);
+            display: inline-block;
+            width: 63px;
+            height: 104px;
+            border: 0;
+            &::after {
+              content: "";
+              display: inline-block;
+              border-top: 1px solid #998465;
+              border-right: 1px solid #998465;
+              width: 40px;
+              height: 40px;
+              transform: rotate(45deg);
+            }
+          }
+          .slide-view {
+            width: 1170px;
+            height: 750px;
+            overflow: hidden;
+            .slide-wrap {
+              width: calc(100% * 30);
+              display: flex;
+              position: relative;
+              margin: 0 0 0 -100%;
+              .slide {
+                width: 100%;
+                > .container {
+                  width: 100%;
+                  > .gap {
+                    width: 100%;
+                    position: relative;
+                    > .title {
+                      position: relative;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      width: 840px;
+                      top: -170px;
+                      padding: 40px 37px 34px 37px;
+                      background-color: rgba($color: #fff, $alpha: 0.9);
+                      text-align: center;
+                      h3 {
+                        font-size: 28px;
+                        color: #998465;
+                        line-height: 33.6px;
+                        font-weight: 500;
+                      }
+                      p {
+                        font-size: 16px;
+                        height: 66px;
+                        color: #000;
+                        line-height: 22.4px;
+                        margin-top: 20px;
+                        font-weight: 400;
+                      }
+                      button {
+                        background: transparent;
+                        border: 2px solid #998465;
+                        padding: 10px 35px;
+                        margin-top: 20px;
+                        transition: all 0.3s;
+                        &:hover {
+                          background-color: #998465;
+                          a {
+                            color: #fff;
+                          }
+                        }
+                        a {
+                          transition: all 0.3s;
+                          color: #998465;
+                          font-size: 16px;
+                          line-height: 19.2px;
+                          letter-spacing: -1px;
+                        }
+                      }
+                    }
+                    > .content {
+                      width: 1170px;
+                      height: 588px;
+                      background: url() no-repeat 50% 50%;
+                      background-size: cover;
+                    }
+                  }
+                }
+                &.slide1 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-seoul-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide2 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-busan-signiel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide3 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-gangnam-l7-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide4 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-guam-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide5 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-daejeon-city-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide6 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-seoul-signiel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide7 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-world-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide8 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-hanoi-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide9 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-jeju-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide10 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-moscow-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide11 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-seattle-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide12 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-busan-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide13 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-stpetersburg-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide14 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-ulsan-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide15 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-vladivostok-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide16 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-jeju-city-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide17 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/180809-1-2000-mai-arai-resort-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide18 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-guro-city-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide19 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-myeongdong-l7-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide20 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-saigon-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide21 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-gimpo-city-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide22 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-hongdae-l7-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide23 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-mapo-city-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide24 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-yangon-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide25 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-myeongdong-city-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide26 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-ulsan-city-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide27 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-samara-hotel-pc.webp);
+                      }
+                    }
+                  }
+                }
+                &.slide28 {
+                  > .container {
+                    > .gap {
+                      > .content {
+                        background-image: url(../img/mai-chain-gallery-tashkentpalace-city-pc.webp);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #section5 {
+    width: 100%;
+    > .container {
+      width: 100%;
+      > .gap {
+        width: 100%;
+        > .content {
+          width: 100%;
+          padding: 80px 0 40px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .slide-view {
+            width: 890px;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+            .slide-wrap {
+              position: relative;
+              width: calc(100% * 6);
+              height: 100%;
+              display: flex;
+              margin: 0 0 0 -100%;
+              .slide {
+                width: 890px;
+                height: 100%;
+                background: url() no-repeat 50% 50%;
+                &.slide1 {
+                  background-image: url(../img/220718-890-mai-GLOBAL.webp);
+                }
+                &.slide2 {
+                  background-image: url(../img/221025-890-mai-GLOBAL.webp);
+                }
+                &.slide3 {
+                  background-image: url(../img/220627-890-etc-GLPBAL-pc.webp);
+                }
+                &.slide4 {
+                  background-image: url(../img/220303-890-mai-GLOBAL.webp);
+                }
+              }
+            }
+            .slick-dots-container {
+              position: absolute;
+              bottom: 16%;
+              right: 12%;
+              > .container {
+                > ul {
+                  width: 140px;
+                  height: 2px;
+                  display: inline-block;
+                  display: flex;
+                  position: relative;
+                  > li {
+                    cursor: pointer;
+                    width: 35px;
+                    height: 2px;
+                    background: #fff;
+                    opacity: 0.5;
+                    transition: all 0.4s;
+                    &.on {
+                      opacity: 1;
+                    }
+                    i {
+                    }
+                  }
+                }
+                > button {
+                  position: absolute;
+                  right: -19px;
+                  top: -8px;
+                  width: 6px;
+                  height: 20px;
+                  background: transparent;
+                  border: 0;
+
+                  &::before {
+                    content: "";
+                    width: 6px;
+                    height: 16px;
+                    display: inline-block;
+                    border-left: 2px solid #c4c4c4;
+                    border-right: 2px solid #c4c4c4;
+                    cursor: pointer;
+                  }
+                  &::after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    display: inline-block;
+                    border-top: 9px solid transparent;
+                    border-left: 11px solid #c4c4c4;
+                    border-bottom: 9px solid transparent;
+                    cursor: pointer;
+                    display: none;
+                  }
+                  &.off {
+                    &::after {
+                      display: inline-block;
+                    }
+                    &::before {
+                      display: none;
+                    }
+                  }
+                }
+              }
+            }
+            .prev-btn {
+              position: absolute;
+              top: 54%;
+              left: 16px;
+              width: 30px;
+              height: 30px;
+              transform: translateY(-50%);
+              border: 0;
+              background: transparent;
+              cursor: pointer;
+              transition: all 0.3s;
+              &:hover {
+                opacity: 0.7;
+              }
+              &::after {
+                content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border-top: 2px solid #fff;
+                border-left: 2px solid #fff;
+                transform: rotate(-45deg);
+                transition: all 0.3s;
+              }
+            }
+            .next-btn {
+              position: absolute;
+              top: 54%;
+              right: 16px;
+              width: 30px;
+              height: 30px;
+              transform: translateY(-50%);
+              border: 0;
+              background: transparent;
+              cursor: pointer;
+              transition: all 0.3s;
+              &:hover {
+                opacity: 0.7;
+              }
+              &::after {
+                content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border-top: 2px solid #fff;
+                border-right: 2px solid #fff;
+                transform: rotate(45deg);
+                transition: all 0.3s;
+              }
+            }
+          }
+        }
+        > .para-box {
+          padding: 30px 0 150px 0;
+          width: 100%;
+          p {
+            width: 100%;
+            max-width: 1340px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 20px;
+            letter-spacing: -1px;
+            font-size: 15px;
+            line-height: 20px;
+            color: rgb(153, 153, 153);
+            word-break: keep-all;
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    > .row1 {
+      background: #555;
+      .container {
+        width: 100%;
+        display: flex;
+        padding: 16px 20px;
+        max-width: 1576px;
+        margin: 0 auto;
+        .hotel-brand {
+          width: 60%;
+          > ul {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            li {
+              a {
+                transition: all 0.3s;
+                &:hover {
+                  opacity: 0.6;
+                }
+                img {
+                }
+              }
+            }
+          }
+        }
+        .app-brand {
+          width: 40%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 0 0 30px;
+
+          ul {
+            display: flex;
+            justify-content: space-around;
+            &:nth-child(1) {
+              width: 45%;
+              justify-content: center;
+              li {
+                padding: 0 10px;
+                a {
+                  opacity: 0.5;
+                  transition: all 0.3s;
+                  &:hover {
+                    opacity: 1;
+                  }
+                  img {
+                    width: 92px;
+                    height: 22px;
+                  }
+                }
+              }
+            }
+            &:nth-child(2) {
+              width: 55%;
+              padding: 0 0 0 10px;
+              li {
+                a {
+                  opacity: 0.5;
+                  transition: all 0.3s;
+                  &:hover {
+                    opacity: 1;
+                  }
+                  img {
+                    height: 22px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > .row2 {
+      width: 100%;
+      background: #111;
+      border-bottom: 1px solid #3e3e3e;
+      .container {
+        width: 100%;
+        max-width: 1576px;
+        margin: 0 auto;
+        padding: 54px 20px;
+        display: flex;
+        justify-content: space-between;
+        .col1 {
+          .logo-box {
+            img {
+            }
+          }
+          .info-box {
+            > .row1 {
+              display: flex;
+              padding: 60px 0 0 0;
+              font-size: 15px;
+              letter-spacing: -1px;
+              line-height: 22.5px;
+              color: #999;
+              h3 {
+                margin-right: 12px;
+                padding-top: 7px;
+              }
+              address {
+                margin-right: 12px;
+                padding-top: 7px;
+              }
+              p {
+                margin-right: 12px;
+                padding-top: 7px;
+                color: #999;
+              }
+            }
+            > .row2 {
+              letter-spacing: -1px;
+              line-height: 22.5px;
+              color: #999;
+              span {
+                color: #999;
+              }
+            }
+            > .row3 {
+              letter-spacing: -1px;
+              line-height: 22.5px;
+              color: #999;
+              span {
+                color: #999;
+              }
+            }
+          }
+        }
+        .col2 {
+          display: flex;
+          ul {
+            padding: 0 26px;
+            border-right: 1px solid #3e3e3e;
+            &:last-child {
+              border: 0;
+            }
+            li {
+              margin: 14px 0 0 0;
+              &:nth-child(1) {
+                margin: 0;
+              }
+              a {
+                color: rgb(167, 167, 167);
+                font-size: 15px;
+                letter-spacing: -1px;
+                line-height: 18px;
+                transition: all 0.3s;
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > .row3 {
+      width: 100%;
+      background: #111;
+      .container {
+        width: 100%;
+        max-width: 1576px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .col1 {
+          padding: 36px 20px;
+          ul {
+            display: flex;
+            li {
+              a {
+                font-size: 15px;
+                letter-spacing: -1px;
+                line-height: 18px;
+                color: #a7a7a7;
+              }
+              i {
+                width: 1px;
+                display: inline-block;
+                height: 12px;
+                background: #3e3e3e;
+                margin: 0 15px;
+              }
+            }
+          }
+        }
+        .col2 {
+          padding: 0 20px;
+          .other-site {
+            display: flex;
+            position: relative;
+            span {
+              display: inline-block;
+              width: 238.14px;
+              height: 40px;
+              border: 1px solid #3e3e3e;
+              padding: 0px 100px 0px 10px;
+              color: #999;
+              font-size: 15px;
+              height: 40px;
+              letter-spacing: -1px;
+              line-height: 40px;
+              text-align: left;
+              vertical-align: middle;
+              position: relative;
+              cursor: pointer;
+              &.on {
+                border: 1px solid #999;
+                background-color: #333;
+                .family-site {
+                }
+              }
+              &::before {
+                content: "";
+                width: 15px;
+                height: 1px;
+                display: inline-block;
+                background: #999;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
+                opacity: 0.6;
+              }
+              &::after {
+                content: "";
+                height: 15px;
+                width: 1px;
+                display: inline-block;
+                background: #999;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 17px;
+                opacity: 0.6;
+              }
+            }
+            .family-site {
+              display: none;
+              position: absolute;
+              top: -0.5px;
+              transform: translateY(-100%);
+              height: 289px;
+              width: 238.14px;
+              overflow: overlay;
+              background: #333;
+              &::-webkit-scrollbar {
+                width: 16px;
+                margin: 0 2px;
+                opacity: 0;
+                background-color: transparent;
+              }
+              &::-webkit-scrollbar-track {
+                box-shadow: none;
+                background-color: transparent;
+              }
+              &::-webkit-scrollbar-thumb {
+                border-radius: 8px;
+                border: 6px solid transparent;
+                box-shadow: inset 14px 0px 0 rgba(153, 153, 153, 0.7);
+              }
+              ul {
+                border: 1px solid #999;
+                li {
+                  color: #999;
+                  font-size: 16px;
+                  line-height: 1.2;
+                  padding: 8px 10px 9px;
+                  cursor: pointer;
+                  transition: all 0.2s;
+                  &:hover {
+                    background-color: #000;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+            button {
+              color: #fff;
+              background: #666;
+              font-size: 14px;
+              letter-spacing: -1px;
+              height: 40px;
+              width: 57px;
+              border: 0;
+              transition: all 0.3s;
+              cursor: pointer;
+              &:hover {
+                background-color: #999;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #gotop {
+    z-index: 3;
+    position: fixed;
+    bottom: 10%;
+    right: 1.8%;
+    .container {
+      .gap {
+        .content {
+          .row {
+            margin: 0 0 9px 0;
+            a {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+              background: url() no-repeat 50% 50%;
+              background-size: cover;
+            }
+            &.row1 {
+              a {
+                background-image: url(../img/ico_coupon_mo.png);
+              }
+            }
+            &.row2 {
+              a {
+                background-image: url(../img/ico_wishlist_mo.png);
+              }
+            }
+            &.row3 {
+              a {
+                background-image: url(../img/ico_livechat_mo.png);
+              }
+            }
+            &.row4 {
+              a {
+                display: none;
+                height: 0;
+                opacity: 0;
+                background-image: url(../img/ico_scrolltop_mo.png);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

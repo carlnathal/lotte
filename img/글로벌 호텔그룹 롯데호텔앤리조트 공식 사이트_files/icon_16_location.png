@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="./img/LH-favicon.ico" />
+  <link rel="apple-touch-icon" href="./img/LH-favicon.ico" />
+  
+  <meta name="description" content="시그니엘, 롯데호텔, L7호텔, 롯데시티호텔 패키지, 특별 이벤트 확인. 객실 및 부대시설 안내" />
+  <meta name="publisher" content="Kim Beomjo">
+
+  <title>글로벌 호텔그룹 롯데호텔앤리조트 공식 사이트</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+<script defer src="/static/js/bundle.js"></script></head>
+
+<body>
+  <div id="root"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+#topModal {
+  width: 100%;
+  height: 40.65px;
+  position: relative;
+  transition: all 1s;
+  z-index: 3;
+  &.off {
+    height: 0;
+    .container {
+      top:-100px;
+    }
+  }
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #432f31;
+    overflow: hidden;
+    &.off {
+      top: -100px;
+    }
+    .gap {
+      width: 100%;
+      padding: 9px 0;
+      .content {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        h2 {
+          width: 100%;
+          strong {
+            font-size: 14px;
+            line-height: 19.2px;
+            letter-spacing: -1px;
+            color: #fff;
+          }
+          a {
+            margin: 0 0 0 10px;
+            text-decoration: underline;
+            color: #c7bbb4;
+            font-size: 14px;
+            line-height: 19.2px;
+            letter-spacing: -1px;
+
+          }
+          button {
+            cursor: pointer;
+            position: absolute;
+            top: -4.5px;
+            right: 15px;
+            width: 30px;
+            height: 30px;
+            background-color: rgba($color: #000000, $alpha: 0);
+            border: 0;
+            &::before {
+              content: '';
+              width: 70%;
+              position: absolute;
+              background: #c7bbb4;
+              height: 2px;
+              transform: rotate(45deg);
+            }
+            &::after {
+              content: '';
+              width: 70%;
+              position: absolute;
+              background: #c7bbb4;
+              height: 2px;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
