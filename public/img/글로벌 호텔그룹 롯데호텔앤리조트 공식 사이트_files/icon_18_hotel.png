@@ -14,7 +14,7 @@
   <title>글로벌 호텔그룹 롯데호텔앤리조트 공식 사이트</title>
 
   <link rel="stylesheet" href="./css/style.css">
-</head>
+<script defer src="/static/js/bundle.js"></script></head>
 
 <body>
   <div id="root"></div>

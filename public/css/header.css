@@ -1,0 +1,1289 @@
+#header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  z-index: 2;
+}
+#header .container {
+  width: 100%;
+}
+#header .container .content {
+  width: 100%;
+  position: relative;
+}
+#header .container .content #topHeader {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+  background: rgba(255, 255, 255, 0.7);
+}
+#header .container .content #topHeader h1 a img {
+  width: 257px;
+  height: 35px;
+}
+#header .container .content #topHeader .top-nav ul {
+  display: flex;
+}
+#header .container .content #topHeader .top-nav ul i {
+  opacity: 0.2;
+}
+#header .container .content #topHeader .top-nav ul li a {
+  font-size: 15px;
+  color: rgb(102, 102, 102);
+  padding: 0 5px;
+  letter-spacing: -1px;
+  line-height: 18px;
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(11) {
+  position: relative;
+  padding: 0 0 0 22px;
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(11) > .language-box {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+  background-color: #fff;
+  border: 1px solid #333;
+  width: 160px;
+  display: none;
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(11) > .language-box.on {
+  display: block;
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(11) > .language-box > ul {
+  display: flex;
+  flex-flow: column wrap;
+  background: url(../img/ico-lang.png) no-repeat 0% -6%;
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(11) > .language-box > ul > li {
+  width: 100%;
+  height: 40px;
+  padding: 10px 17px 10px 27px;
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(11) > .language-box > ul > li a {
+  font-size: 14px;
+  text-align: center;
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(11) > a {
+  position: relative;
+  padding: 0 22px 0 0;
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(11) > a::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  background-color: #999;
+  top: 47%;
+  right: 9px;
+  transform: rotate(45deg);
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(11) > a::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  background-color: #999;
+  top: 47%;
+  right: 3.83px;
+  transform: rotate(-45deg);
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(11)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../img/ico-lang.png) no-repeat 45% 95%;
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(13) a {
+  position: relative;
+  padding: 0 22px 0 0;
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(13) a::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  background-color: #999;
+  top: 47%;
+  right: 9px;
+  transform: rotate(45deg);
+}
+#header .container .content #topHeader .top-nav ul li:nth-child(13) a::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  background-color: #999;
+  top: 47%;
+  right: 3.83px;
+  transform: rotate(-45deg);
+}
+#header .container .content #topHeader .top-nav .mob-btn {
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  line-height: 1.2;
+  color: #333;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  word-break: keep-all;
+  word-wrap: break-word;
+  font-family: "Open Sans", Noto-lang-Regular, NotoKR-Regular, "Malgun Gothic", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  top: 14px;
+}
+#header .container .content #topHeader .top-nav .mob-btn > button {
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  word-break: keep-all;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font: inherit;
+  overflow: visible;
+  text-transform: none;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  background: 0;
+  vertical-align: middle;
+  font-family: "Open Sans", Noto-lang-Regular, NotoKR-Regular, "Malgun Gothic", sans-serif;
+  line-height: 1.2;
+  color: #333;
+  letter-spacing: 0;
+  -webkit-text-size-adjust: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: 0;
+  font-size: 18px;
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  transition-property: border-color, background-color, color, opacity;
+  width: 100%;
+  height: 100%;
+}
+#header .container .content #topHeader .top-nav .mob-btn > button span {
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  font: inherit;
+  text-transform: none;
+  line-height: 1.2;
+  color: #333;
+  -webkit-text-size-adjust: none;
+  cursor: pointer;
+  font-size: 18px;
+  word-break: keep-all;
+  word-wrap: break-word;
+  font-family: "Open Sans", Noto-lang-Regular, NotoKR-Regular, "Malgun Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  background-color: #666;
+  transition: all 0.5s ease;
+  left: 5px;
+}
+#header .container .content #topHeader .top-nav .mob-btn > button span::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  background-color: #666;
+  transition: all 0.5s ease;
+  top: -5px;
+}
+#header .container .content #topHeader .top-nav .mob-btn > button span::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  background-color: #666;
+  transition: all 0.5s ease;
+  top: 5px;
+}
+#header .container .content #nav {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  vertical-align: middle;
+}
+#header .container .content #nav > .row1 {
+  position: relative;
+  z-index: 3;
+  border-bottom: 1px solid #dcdcdc;
+  background: rgba(255, 255, 255, 0.7);
+}
+#header .container .content #nav > .row1 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .container .content #nav > .row1 ul li {
+  padding: 31px 20px;
+  line-height: 21.6px;
+  letter-spacing: -1px;
+  font-size: 18px;
+  color: #998465;
+}
+#header .container .content #nav > .row1 ul li span {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid rgba(153, 132, 101, 0);
+  transition: all 0.3s;
+  font-weight: 500;
+  cursor: pointer;
+}
+#header .container .content #nav > .row1 ul li span:hover {
+  border-bottom: 1px solid #998465;
+}
+#header .container .content #nav > .row1 ul li span::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon-search.png) no-repeat 0% 115%;
+}
+#header .container .content #nav > .row1 ul li a {
+  color: #333;
+  line-height: 21.6px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0);
+  transition: all 0.3s;
+}
+#header .container .content #nav > .row1 ul li a:hover {
+  border-bottom: 1px solid #333333;
+}
+#header .container .content #nav > .row1 .rewards-box {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#header .container .content #nav > .row1 .rewards-box .content {
+  background: #ad9e87;
+  width: 175px;
+  height: 40px;
+  padding: 0 10px;
+  text-align: center;
+  transition: all 0.3s;
+}
+#header .container .content #nav > .row1 .rewards-box .content:hover {
+  background-color: #806f57;
+}
+#header .container .content #nav > .row1 .rewards-box .content a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+#header .container .content #nav #reservation-menu {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  transition: all 2s;
+}
+#header .container .content #nav #reservation-menu.off {
+  overflow: hidden;
+}
+#header .container .content #nav #reservation-menu.off > .container {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(-110%);
+}
+#header .container .content #nav #reservation-menu > .container {
+  width: 100%;
+  padding: 24px 0px;
+  background: rgba(173, 158, 135, 0.97);
+  transition: all 1s;
+}
+#header .container .content #nav #reservation-menu > .container > .content {
+  width: 100%;
+  display: flex;
+  max-width: 1696px;
+  margin: 0 auto;
+  position: relative;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box {
+  width: 25%;
+  padding: 0 0 0 80px;
+  position: relative;
+  z-index: 1;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .content label {
+  color: #313131;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .content input {
+  height: 34px;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -1px;
+  margin: 13px 20px 0 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  transition: all 0.3s;
+  color: #fff;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .content input::-moz-placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .content input::placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .content input:focus {
+  border-bottom: 2px solid #fff;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box {
+  display: none;
+  z-index: 1;
+  top: 80px;
+  position: absolute;
+  width: 564px;
+  height: 390px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(-50%);
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .current-box {
+  width: 50%;
+  height: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .current-box h4 {
+  position: relative;
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .current-box h4 img {
+  width: auto;
+  position: absolute;
+  top: 9.5px;
+  left: 15px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .current-box h4 span {
+  display: inline-block;
+  color: #666;
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 19.2px;
+  padding: 10px 26px 10px 38px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .current-box p {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #898989;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box {
+  width: 50%;
+  height: 100%;
+  border-left: 1px solid #ddd;
+  transition: all 1s;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box h4 {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box h4 img {
+  padding: 0 7px 0 15px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box h4 span {
+  color: #898989;
+  font-size: 15px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul {
+  width: 100%;
+  height: 85%;
+  position: relative;
+  overflow: overlay;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul::-webkit-scrollbar {
+  position: absolute;
+  z-index: 1;
+  width: 17px;
+  background-color: transparent;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul::-webkit-scrollbar-thumb {
+  background-color: #666;
+  background-clip: padding-box;
+  border: 7px solid transparent;
+  border-radius: 10px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul::-webkit-scrollbar-track {
+  display: none;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.5s;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li:hover {
+  background-color: #ddd;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li:hover > a {
+  color: #000;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li > a {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 16px;
+  color: #666;
+  transition: all 0.5s;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li::after {
+  content: "";
+  position: absolute;
+  left: calc(100% - 40px);
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  transform: rotate(135deg);
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li.on {
+  background-color: #ddd;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li.on > a {
+  color: #000;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li.on::after {
+  top: 19px;
+  transform: rotate(-45deg);
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li.on > ul {
+  height: auto;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li > ul {
+  overflow: hidden;
+  height: 0;
+  transition: all 1s;
+  width: 100%;
+  background: #fff;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li > ul > li {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li > ul > li > a {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 14px;
+  color: #898989;
+}
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li > ul > li > a:hover {
+  text-decoration: underline;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box {
+  width: 25%;
+  position: relative;
+  z-index: 1;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .content {
+  z-index: 2;
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .content .check-in-box {
+  display: flex;
+  flex-flow: column wrap;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .content .check-in-box span {
+  color: #313131;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .content .check-in-box a {
+  margin: 11px 0 0 0;
+  letter-spacing: -1px;
+  color: #fff;
+  height: 34px;
+  font-size: 18px;
+  line-height: 34px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .content .day-box {
+  display: flex;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .content .day-box span {
+  padding: 30px 30px 0 30px;
+  letter-spacing: -1px;
+  color: #fff;
+  height: 63px;
+  font-size: 18px;
+  line-height: 34px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .content .check-out-box {
+  display: flex;
+  flex-flow: column wrap;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .content .check-out-box span {
+  color: #313131;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .content .check-out-box a {
+  margin: 11px 0 0 0;
+  letter-spacing: -1px;
+  color: #fff;
+  height: 34px;
+  font-size: 18px;
+  line-height: 34px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 80px;
+  left: -200px;
+  width: 1000px;
+  height: 372px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0 0 30px 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(-50%);
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box {
+  position: relative;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  padding: 18px 20px 30px 20px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 265px;
+  top: 45px;
+  right: -15px;
+  background: #ddd;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month {
+  width: 50%;
+  padding: 0 10px 0 0;
+  position: relative;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .title {
+  line-height: 35px;
+  font-size: 17px;
+  position: relative;
+  display: flex;
+  padding: 0 0 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .title a {
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .title a i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #666;
+  border-left: 1px solid #666;
+  transform: rotate(-45deg);
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .title h4 {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .table-box {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .table-box > table {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .table-box > table > thead {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .table-box > table > thead tr th {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 15px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .table-box > table > tbody {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .table-box > table > tbody tr td {
+  padding: 4px 0;
+  font-weight: 500;
+  text-align: center;
+  width: 35px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 15px;
+  color: #333;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month > .table-box > table > tbody tr td:nth-child(1) {
+  color: #ef6600;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .current-month::after {
+  content: "";
+  width: 1px;
+  height: 190px;
+  position: absolute;
+  background: #dcdcdc;
+  top: 50px;
+  right: 0px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month {
+  width: 50%;
+  padding: 0 0 0 10px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .title {
+  line-height: 35px;
+  font-size: 17px;
+  position: relative;
+  display: flex;
+  padding: 0 0 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .title a {
+  top: -1px;
+  position: absolute;
+  right: 0;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .title a i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #666;
+  border-left: 1px solid #666;
+  transform: rotate(135deg);
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .title h4 {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .table-box {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .table-box > table {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .table-box > table > thead {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .table-box > table > thead tr {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .table-box > table > thead tr th {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 15px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .table-box > table > tbody {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .table-box > table > tbody tr td {
+  padding: 4px 0;
+  font-weight: 500;
+  text-align: center;
+  width: 35px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 15px;
+  color: #333;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .calendar-box .next-month > .table-box > table > tbody tr td:nth-child(1) {
+  color: #ef6600;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box {
+  width: 45%;
+  height: 100%;
+  padding: 30px 26px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  justify-content: start;
+  margin: 0 0 auto 0;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .child-age-box {
+  text-align: end;
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .child-age-box a img {
+  width: 14px;
+  height: 14px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .child-age-box a span {
+  margin: 0 0 0 2px;
+  font-size: 14px;
+  color: #666;
+  line-height: 18px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row > .title {
+  margin: 0 25px 0 15px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row > .title h5 {
+  color: #333;
+  line-height: 34px;
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row .adult-box {
+  margin-right: 20px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row .adult-box button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #bbb;
+  background: #fff;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row .adult-box button:nth-child(1) {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row .adult-box button:nth-child(3) {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row .adult-box span {
+  font-size: 15px;
+  display: inline-block;
+  width: 68px;
+  height: 34px;
+  line-height: 34px;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  text-align: center;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row .children-box button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #bbb;
+  background: #fff;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row .children-box button:nth-child(1) {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row .children-box button:nth-child(3) {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row .children-box span {
+  font-size: 15px;
+  display: inline-block;
+  width: 68px;
+  height: 34px;
+  line-height: 34px;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  text-align: center;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .row.row1 {
+  margin-top: 30px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .add-room-box {
+  padding: 5px 0 0 0;
+  position: relative;
+  left: 36px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .add-room-box a span {
+  margin: 0 5px 0 0;
+  color: #333;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content .add-room-box a i {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  color: #fefefe;
+  background-color: #ad9e87;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content > button {
+  position: absolute;
+  width: 280px;
+  height: 50px;
+  left: 82px;
+  bottom: -20px;
+  border: 1px solid #333;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 50px;
+  background: #000;
+  transition: all 0.3s;
+}
+#header .container .content #nav #reservation-menu > .container > .content .check-inout-box .room-select-box > .content .person-select-box > .content > button:hover {
+  background-color: #fff;
+  color: #333;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box {
+  position: relative;
+  z-index: 1;
+  width: 15%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box .content {
+  display: flex;
+  justify-content: space-around;
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box .content .rooms {
+  display: flex;
+  flex-flow: column;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box .content .rooms h5 {
+  color: #313131;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box .content .rooms a {
+  text-align: center;
+  margin: 11px 0 0 0;
+  letter-spacing: -1px;
+  color: #fff;
+  height: 34px;
+  font-size: 18px;
+  line-height: 34px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box .content .adult {
+  display: flex;
+  flex-flow: column;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box .content .adult h5 {
+  color: #313131;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box .content .adult a {
+  text-align: center;
+  margin: 11px 0 0 0;
+  letter-spacing: -1px;
+  color: #fff;
+  height: 34px;
+  font-size: 18px;
+  line-height: 34px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box .content .child {
+  display: flex;
+  flex-flow: column;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box .content .child h5 {
+  color: #313131;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+#header .container .content #nav #reservation-menu > .container > .content .room-box .content .child a {
+  text-align: center;
+  margin: 11px 0 0 0;
+  letter-spacing: -1px;
+  color: #fff;
+  height: 34px;
+  font-size: 18px;
+  line-height: 34px;
+}
+#header .container .content #nav #reservation-menu > .container > .content .promotion-box {
+  width: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .container .content #nav #reservation-menu > .container > .content .promotion-box .content {
+  text-align: center;
+}
+#header .container .content #nav #reservation-menu > .container > .content .promotion-box .content a {
+  margin: 0 0 0 12px;
+  letter-spacing: -1px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19.2px;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+#header .container .content #nav #reservation-menu > .container > .content .promotion-box .content a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 24px;
+  height: 24px;
+  background: url(../img/icon_24_promotion_on.png) no-repeat 50% 50%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .search-box {
+  width: 14%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .search-box .content {
+  width: 100%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .search-box .content button {
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  height: 61px;
+  background: rgb(173, 158, 135);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #fff;
+}
+#header .container .content #nav #reservation-menu > .container > .content .search-box .content button:hover {
+  background: #fff;
+  color: rgba(173, 158, 135, 0.97);
+}
+#header .container .content #nav #reservation-menu > .container > .content .hide-click-box {
+  width: 7%;
+}
+#header .container .content #nav #reservation-menu > .container > .content .hide-click-box .content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#header .container .content #nav #reservation-menu > .container > .content .hide-click-box .content a {
+  padding: 0 15px 0 0;
+  letter-spacing: -1px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19.2px;
+  position: relative;
+}
+#header .container .content #nav #reservation-menu > .container > .content .hide-click-box .content a::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: -2px;
+  width: 13px;
+  height: 13px;
+  background: url(../img/btn_reservation_close.png);
+}
+#header .container .content #nav #reservation-menu > .container .hide-input-box {
+  width: 100%;
+  display: none;
+}
+#header .container .content #nav #reservation-menu > .container .hide-input-box .box-gap {
+  width: 100%;
+  padding: 0 24px;
+  position: relative;
+}
+#header .container .content #nav #reservation-menu > .container .hide-input-box .box-gap::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 41px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: url(../img/icon-search-m.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+#header .container .content #nav #reservation-menu > .container .hide-input-box .box-gap input {
+  font-size: 13px;
+  color: #333;
+  letter-spacing: -1px;
+  width: 100%;
+  height: 48px;
+  padding: 15px 15px 15px 42px;
+  border: 0;
+  font-family: "Noto Sans KR";
+}
+#header .container .content #nav #special-nav {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.7s;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+#header .container .content #nav #special-nav.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+#header .container .content #nav #special-nav .container {
+  padding: 20px 0 0 0;
+  transition: all 1s;
+  width: 100%;
+  background: #fff;
+}
+#header .container .content #nav #special-nav .container .content {
+  max-width: 1696px;
+  margin: 0 auto;
+  padding: 10px 0 30px 130px;
+  display: flex;
+}
+#header .container .content #nav #special-nav .container .content .whole {
+  width: 20%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0 160px 0;
+}
+#header .container .content #nav #special-nav .container .content .whole h4 {
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 30px;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s;
+  position: relative;
+  display: inline-block;
+}
+#header .container .content #nav #special-nav .container .content .whole h4::before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: 19.5px;
+  right: -25px;
+  background: #333;
+  transform: rotate(-45deg);
+  transition: all 0.3s;
+}
+#header .container .content #nav #special-nav .container .content .whole h4::after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: 9.5px;
+  right: -25px;
+  background: #333;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+#header .container .content #nav #special-nav .container .content .whole h4:hover {
+  color: #998465;
+}
+#header .container .content #nav #special-nav .container .content .whole h4:hover::after {
+  background-color: #998465;
+}
+#header .container .content #nav #special-nav .container .content .whole h4:hover::before {
+  background-color: #998465;
+}
+#header .container .content #nav #special-nav .container .content .menu {
+  width: 80%;
+  padding: 0 50px;
+}
+#header .container .content #nav #special-nav .container .content .menu ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+#header .container .content #nav #special-nav .container .content .menu ul li {
+  width: 33.3333333333%;
+  padding: 20px 0 15px 0;
+}
+#header .container .content #nav #special-nav .container .content .menu ul li a {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+#header .container .content #nav #special-nav .container .content .menu ul li a:hover {
+  color: #998465;
+}
+#header .container .content #nav #wedding-nav {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.7s;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+#header .container .content #nav #wedding-nav.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+#header .container .content #nav #wedding-nav .container {
+  position: relative;
+  padding: 20px 0 0 0;
+  transition: all 1s;
+  width: 100%;
+  background: #fff;
+}
+#header .container .content #nav #wedding-nav .container .content {
+  max-width: 1696px;
+  margin: 0 auto;
+  padding: 10px 0 30px 130px;
+  display: flex;
+}
+#header .container .content #nav #wedding-nav .container .content .whole {
+  width: 20%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0 160px 0;
+}
+#header .container .content #nav #wedding-nav .container .content .whole h4 {
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 30px;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s;
+  position: relative;
+  display: inline-block;
+}
+#header .container .content #nav #wedding-nav .container .content .whole h4::before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: 19.5px;
+  right: -25px;
+  background: #333;
+  transform: rotate(-45deg);
+  transition: all 0.3s;
+}
+#header .container .content #nav #wedding-nav .container .content .whole h4::after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: 9.5px;
+  right: -25px;
+  background: #333;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+#header .container .content #nav #wedding-nav .container .content .whole h4:hover {
+  color: #998465;
+}
+#header .container .content #nav #wedding-nav .container .content .whole h4:hover::after {
+  background-color: #998465;
+}
+#header .container .content #nav #wedding-nav .container .content .whole h4:hover::before {
+  background-color: #998465;
+}
+#header .container .content #nav #wedding-nav .container .content .menu-container {
+  width: 100%;
+  display: flex;
+}
+#header .container .content #nav #wedding-nav .container .content .menu-container .menu {
+  width: 30%;
+  padding: 0 50px;
+}
+#header .container .content #nav #wedding-nav .container .content .menu-container .menu ul {
+  width: 100%;
+}
+#header .container .content #nav #wedding-nav .container .content .menu-container .menu ul li {
+  width: 100%;
+}
+#header .container .content #nav #wedding-nav .container .content .menu-container .menu ul li a {
+  display: inline-block;
+  padding: 7px 0;
+  transition: all 1s;
+}
+#header .container .content #nav #wedding-nav .container .content .menu-container .menu ul li a:hover {
+  color: #998465;
+  text-decoration: underline;
+}
+#header .container .content #nav #wedding-nav .container .content .menu-container .menu ul li:first-child {
+  padding: 20px 0 10px 0;
+}
+#header .container .content #nav #wedding-nav .container .content .menu-container .menu ul li:first-child a {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+#header .container .content #nav #wedding-nav .container .content .menu-container .menu ul li:first-child a:hover {
+  color: #998465;
+  text-decoration: none;
+}
