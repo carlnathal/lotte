@@ -507,7 +507,7 @@
 #header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li.on > a {
   color: #000;
 }
-> #header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li.on::after {
+#header .container .content #nav #reservation-menu > .container > .content .city-box .select-box > .container .hotel-choice-box > ul > li.on::after {
   top: 19px;
   transform: rotate(-45deg);
 }
