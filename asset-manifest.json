@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/lotte/static/js/main.e9ee6866.js",
+    "main.js": "/lotte/static/js/main.ea66264c.js",
     "index.html": "/lotte/index.html",
-    "main.e9ee6866.js.map": "/lotte/static/js/main.e9ee6866.js.map"
+    "main.ea66264c.js.map": "/lotte/static/js/main.ea66264c.js.map"
   },
   "entrypoints": [
-    "static/js/main.e9ee6866.js"
+    "static/js/main.ea66264c.js"
   ]
 }
